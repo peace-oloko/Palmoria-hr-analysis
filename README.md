@@ -69,13 +69,16 @@ SalaryBand =
     ">$100k"
   )
 
-Bonus Calculation DAX
+Bonus Calculation
+- After transforming and unpivoting the Bonus Rules:
+
+- Joined Tables
+Created a composite key: DeptRatingKey = Department & "-" & Rating in both tables
+
 ```dax
 BonusPercent = RELATED('Bonus Rules'[BonusPercent]) / 100
 
 BonusPay = [Salary] * [BonusPercent]
 
 TotalPay = [Salary] + [BonusPay]
-
-
 
