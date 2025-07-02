@@ -69,11 +69,7 @@ SalaryBand =
     ">$100k"
   )
 
-- Visuals: Salary Band count clustered column chart + Salary Band by Region chart
-
-
-### Bonus Calculation DAX
-
+Bonus Calculation DAX
 ```dax
 BonusPercent = RELATED('Bonus Rules'[BonusPercent]) / 100
 
