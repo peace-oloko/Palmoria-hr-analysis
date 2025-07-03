@@ -51,6 +51,7 @@ The Palmoria case was analyzed using Power BI with DAX, Power Query, and visual 
 
 #### Minimum Wage Compliance
 - Filter: Salary < 90,000 (non-compliant employees)
+- Visuals: Clustered column chart
 - Created a new column:
 
 ```DAX
